@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+
+  <!-- Navigation -->
+    <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biodata.html" style=>Biodata</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="family.html">Family</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <h1>My Experience</h1>
+
+ 
+
+  <script>
+    let slideIndex = 0;
+    function showSlides() {
+      const slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].classList.add("active");
+      setTimeout(showSlides, 2000);
+    }
+    showSlides();
+  </script>
+
+  <!-- Silat Experience -->
+  <h2>Silat Experience</h2>
+  <div class="table-container">
+    <table class="biodata-table">
+      <tr>
+        <th>No</th>
+        <th>Experience</th>
+        <th>Year / Details</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Becoming a Silat coach at a young age</td>
+        <td>18 years old</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Participate in Silat arts competitions</td>
+        <td>Pesta Angin Timur</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Participated in several athletic Silat competitions</td>
+        <td>Various local and national levels</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Sports Experience -->
+  <h2>Sports Experience</h2>
+  <div class="table-container">
+    <table class="biodata-table">
+      <tr>
+        <th>No</th>
+        <th>Sport</th>
+        <th>Experience</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Badminton</td>
+        <td>Won a bronze medal at village level</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Woodball</td>
+        <td>Has experience playing</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Tennis</td>
+        <td>Participated in several tournaments</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Petanque</td>
+        <td>Competed in a tournament</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Checkers</td>
+        <td>Won a bronze medal (Form 6 level)</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Silat</td>
+        <td>Participated in multiple competitions</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Camping Experience -->
+  <h2>Camping Experience</h2>
+  <div class="table-container">
+    <table class="biodata-table">
+      <tr>
+        <th>No</th>
+        <th>Activity</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Cooking</td>
+        <td>Cooked rice, eggs, vegetables using wooden stove</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Foraging</td>
+        <td>Found wild plants (ulam raja, bamboo shoots)</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Setting Up Tent</td>
+        <td>Learned proper setup for camping</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Knots</td>
+        <td>Tied survival knots</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Making Tools</td>
+        <td>Crafted tools from natural materials</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Building Traps</td>
+        <td>Made simple survival traps</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <p>Name: Muhammad Aniq Najmi Bin Rizlan</p>
+      <p>Matric No: 241570012</p>
+    </div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/muhammad.rizlan.52/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/@aniqgamer" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok">
+      </a>
+      <a href="https://wa.me/601114914359" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">⬆ Top</button>
+
+  <script>
+    window.onscroll = function () {
+      const btn = document.getElementById("topBtn");
+      btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+
+</html>
